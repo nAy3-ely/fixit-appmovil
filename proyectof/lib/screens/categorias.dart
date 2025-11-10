@@ -4,39 +4,33 @@ import 'pantalla_base.dart';
 class CategoriasPage extends StatelessWidget {
   final List<Map<String, dynamic>> categorias = [
     {
-      'nombre': 'Frutas',
-      'icono': Icons.apple,
-      'color': Colors.red,
+      'nombre': 'Plomería',
+      'imagen': 'assets/images/plomeria.jpg',
       'ruta': '/buscar',
     },
     {
-      'nombre': 'Verduras',
-      'icono': Icons.eco,
-      'color': Colors.green,
+      'nombre': 'Electricidad',
+      'imagen': 'assets/images/electricidad.jpg',
       'ruta': '/buscar',
     },
     {
-      'nombre': 'Granos',
-      'icono': Icons.rice_bowl,
-      'color': Colors.brown,
+      'nombre': 'Carpintería',
+      'imagen': 'assets/images/carpinteria.jpg',
       'ruta': '/buscar',
     },
     {
-      'nombre': 'Proteínas',
-      'icono': Icons.set_meal,
-      'color': Colors.orange,
+      'nombre': 'Asistencia Doméstica',
+      'imagen': 'assets/images/domestica.jpg',
       'ruta': '/buscar',
     },
     {
-      'nombre': 'Lácteos',
-      'icono': Icons.local_drink,
-      'color': Colors.blue,
+      'nombre': 'Cerrajería',
+      'imagen': 'assets/images/cerrajeria.jpg',
       'ruta': '/buscar',
     },
     {
-      'nombre': 'Bebidas',
-      'icono': Icons.local_cafe,
-      'color': Colors.purple,
+      'nombre': 'Jardinería',
+      'imagen': 'assets/images/jardineria.jpg',
       'ruta': '/buscar',
     },
   ];
@@ -60,26 +54,40 @@ class CategoriasPage extends StatelessWidget {
             return GestureDetector(
               onTap: () {
                 Navigator.pushNamed(
-                    context,
-                        '/buscar',
-                arguments: item['nombre'], // 👉 Envías "Frutas", "Verduras", etc.
-);
+                  context,
+                  item['ruta'],
+                  arguments: item['nombre'],
+                );
               },
               child: Container(
                 decoration: BoxDecoration(
-                  color: item['color'].withOpacity(0.8),
                   borderRadius: BorderRadius.circular(20),
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(item['icono'], size: 50, color: Colors.white),
-                    SizedBox(height: 10),
-                    Text(
-                      item['nombre'],
-                      style: TextStyle(fontSize: 18, color: Colors.white),
+                  image: DecorationImage(
+                    image: AssetImage(item['imagen']),
+                    fit: BoxFit.cover,
+                    colorFilter: ColorFilter.mode(
+                      Colors.black.withOpacity(0.35),
+                      BlendMode.darken,
                     ),
-                  ],
+                  ),
+                ),
+                child: Center(
+                  child: Text(
+                    item['nombre'],
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      shadows: [
+                        Shadow(
+                          color: Colors.black87,
+                          blurRadius: 8,
+                          offset: Offset(1, 1),
+                        ),
+                      ],
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ),
             );

@@ -16,7 +16,7 @@ class PantallaBase extends StatelessWidget {
             currentAccountPicture: CircleAvatar(
               backgroundImage: AssetImage('assets/images/usuario.jpg'),
             ),
-            decoration: BoxDecoration(color: Color.fromARGB(255, 154, 81, 175)),
+            decoration: BoxDecoration(color: Color.fromARGB(255, 126, 116, 115)),
           ),
           ListTile(
             leading: Icon(Icons.login),
@@ -73,7 +73,7 @@ class PantallaBase extends StatelessWidget {
       onTap: (index) {
         switch (index) {
           case 0:
-            Navigator.pushNamed(context, '/');
+            Navigator.pushNamed(context, '/'); //no mover esto para nada chucha
             break;
           case 1:
             Navigator.pushNamed(context, '/login');
@@ -102,7 +102,7 @@ class PantallaBase extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Guía de Alimentos')),
+      appBar: AppBar(title: Text('FIX IT!!')),
       drawer: _buildDrawer(context),
       body: contenido,
       bottomNavigationBar: _buildBottomBar(context),

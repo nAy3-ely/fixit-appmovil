@@ -13,90 +13,90 @@ class _BuscarPageState extends State<BuscarPage> {
   String categoriaSeleccionada = '';
 
   final List<Alimento> alimentos = [
-    // FRUTAS
+    // PLOMERIA
     Alimento(
-      nombre: 'Manzana',
-      categoria: 'Frutas',
-      imagen: 'assets/images/manzana.jpg',
-      descripcion: 'Fruta rica en fibra, antioxidantes y vitamina C.',
-      beneficios: ['Mejora digestión', 'Regula el azúcar'],
-    ),
+    nombre: 'Jose Roberto',
+    categoria: 'Plomería',
+    imagen: 'assets/images/plomeria.jpg',
+    descripcion: 'Plomero profesional con más de 10 años de experiencia en reparación e instalación de tuberías, grifos y sanitarios. Especialista en detección y solución de fugas de agua. Servicio rápido y garantizado.',
+    beneficios: ['Reparaciones duraderas', 'Precios justos', 'Servicio de emergencia 24/7'],
+),
     Alimento(
-      nombre: 'Banano',
-      categoria: 'Frutas',
-      imagen: 'assets/images/banano.jpg',
-      descripcion: 'Fuente natural de potasio y energía.',
-      beneficios: ['Aumenta energía', 'Reduce calambres'],
-    ),
+    nombre: 'Ana María Vargas',
+    categoria: 'Plomería',
+    imagen: 'assets/images/plomeria2.jpg',
+    descripcion: 'Maestra plomera con 8 años de experiencia. *Especialista en detección de fugas no visibles* utilizando equipos de geófono y gas trazador. Ofrezco diagnósticos precisos para resolver problemas de humedad y alta factura de agua sin necesidad de romper innecesariamente.',
+    beneficios: ['Detección sin daños', 'Garantía por escrito', 'Ahorro en factura de agua'],
+),
     Alimento(
-      nombre: 'Naranja',
-      categoria: 'Frutas',
-      imagen: 'assets/images/naranja.jpg',
-      descripcion: 'Fruta cítrica con alto contenido en vitamina C.',
-      beneficios: ['Fortalece defensas', 'Antioxidante'],
-    ),
+    nombre: 'Carlos Manuel Díaz',
+    categoria: 'Plomería',
+    imagen: 'assets/images/plomeria3.jpg',
+    descripcion: 'Técnico certificado con 15 años en el sector, enfocado en *instalaciones hidráulicas y de gas* para obras nuevas y remodelaciones. Experto en calentadores, bombas de agua, sistemas hidroneumáticos y mantenimiento preventivo integral.',
+    beneficios: ['Trabajos de gran envergadura', 'Certificación en Gas Natural', 'Mantenimiento preventivo'],
+),
 
-    // VERDURAS
+    // Electricidad
     Alimento(
-      nombre: 'Brócoli',
-      categoria: 'Verduras',
-      imagen: 'assets/images/brocoli.jpg',
-      descripcion: 'Rico en fibra, vitaminas y antioxidantes.',
-      beneficios: ['Protege contra cáncer', 'Mejora digestión'],
-    ),
+    nombre: 'Ricardo Antonio López',
+    categoria: 'Electricidad',
+    imagen: 'assets/images/electricidad.jpg',
+    descripcion: 'Electricista certificado con 7 años de experiencia en instalaciones y reparaciones domésticas. Especialista en cortocircuitos, fallas de interruptores, tomas de corriente y cableado de iluminación interior. *Servicio de urgencia 24 horas.*',
+    beneficios: ['Atención inmediata a fallas', 'Instalaciones seguras y normadas', 'Presupuestos detallados sin compromiso'],
+),
     Alimento(
-      nombre: 'Zanahoria',
-      categoria: 'Verduras',
-      imagen: 'assets/images/zanahoria.jpg',
-      descripcion: 'Rica en betacarotenos y vitamina A.',
-      beneficios: ['Cuida la visión', 'Mejora la piel'],
-    ),
+    nombre: 'Sofía Jiménez Cruz',
+    categoria: 'Electricidad',
+    imagen: 'assets/images/electricidad.jpg',
+    descripcion: 'Técnica electricista con enfoque en la eficiencia energética para locales y oficinas. Experta en diseño e instalación de *sistemas de iluminación LED*, tableros de control y subestaciones de baja tensión. Te ayudo a reducir tu consumo eléctrico.',
+    beneficios: ['Optimización de consumo eléctrico', 'Cálculo de cargas y balanceo', 'Experta en normatividad (NOM)'],
+),
 
-    // LÁCTEOS
+    // Carpintería
     Alimento(
-      nombre: 'Yogur',
-      categoria: 'Lácteos',
-      imagen: 'assets/images/yogur.jpg',
-      descripcion: 'Lácteo fermentado con probióticos.',
-      beneficios: ['Mejora flora intestinal', 'Fuente de calcio'],
-    ),
+    nombre: 'Daniela Reyes',
+    categoria: 'Carpintería',
+    imagen: 'assets/images/carpinteria.jpg',
+    descripcion: 'Ebanista con 10 años de experiencia, especializada en la *creación y restauración de mobiliario fino*. Diseño y fabricación de cocinas, armarios empotrados, bibliotecas y piezas únicas utilizando maderas nobles (nogal, cerezo, ébano) y técnicas de ensamblaje tradicional.',
+    beneficios: ['Diseños 3D de piezas a medida', 'Acabados de laca y barniz de alta calidad', 'Restauración de muebles antiguos'],
+),
     Alimento(
-      nombre: 'Queso',
-      categoria: 'Lácteos',
-      imagen: 'assets/images/queso.jpg',
-      descripcion: 'Producto derivado de la leche.',
-      beneficios: ['Fortalece huesos', 'Fuente de proteínas'],
-    ),
+    nombre: 'Marco Polo Galván',
+    categoria: 'Carpintería',
+    imagen: 'assets/images/carpinteria.jpg',
+    descripcion: 'Carpintero de obra con 15 años en construcción y remodelación. Experto en la *instalación de puertas, ventanas, marcos y pisos de madera (parquet y laminados)*. También realizo trabajos exteriores como pérgolas, decks y estructuras de madera para tejados.',
+    beneficios: ['Instalación rápida de puertas y pisos', 'Trabajos estructurales exteriores (decks/pérgolas)', 'Manejo de materiales compuestos (melamina, MDF)'],
+),
 
-    // GRANOS
+    // ASISTENCIA
     Alimento(
-      nombre: 'Lentejas',
-      categoria: 'Granos',
-      imagen: 'assets/images/lentejas.jpg',
-      descripcion: 'Ricas en hierro, fibra y proteína vegetal.',
-      beneficios: ['Previene anemia', 'Reduce colesterol'],
-    ),
-
-
-    // PROTEÍNAS
-    Alimento(
-      nombre: 'Pollo',
-      categoria: 'Proteínas',
-      imagen: 'assets/images/pollo.jpg',
-      descripcion: 'Carne blanca baja en grasa.',
-      beneficios: ['Ayuda a construir músculo', 'Baja en colesterol'],
-    ),
+      nombre: 'Elena Mendoza',
+    categoria: 'Asistencia Doméstica',
+    imagen: 'assets/images/asistencia1.jpg',
+    descripcion: 'Profesional con 9 años dedicada a la *limpieza profunda y desinfección* de hogares. Experta en el manejo de productos ecológicos y la optimización de rutinas de limpieza. Me enfoco en cocinas, baños y el tratamiento de superficies delicadas para un ambiente saludable.',
+    beneficios: ['Limpieza ecológica y sostenible', 'Eficacia en tratamiento de manchas', 'Organización básica de armarios y espacios'],
+),
 
 
-    // BEBIDAS
+    // CERRAJERIA
+    Alimento(
+    nombre: 'Héctor Gómez',
+    categoria: 'Cerrajería',
+    imagen: 'assets/images/cerrajeria.jpg',
+    descripcion: 'Cerrajero profesional con servicio de *emergencia 24 horas*. Apertura de puertas de hogar y negocio sin daños, cambio de bombines y cilindros, e instalación de cerrojos de seguridad. Llego a tu ubicación en menos de 30 minutos en la zona metropolitana.',
+    beneficios: ['Atención 24/7 (incluye festivos)', 'Aperturas sin dañar la puerta', 'Duplicado de llaves estándar in situ'],
+),
+
+
+    // Jardinería
 
     Alimento(
-      nombre: 'Jugo verde',
-      categoria: 'Bebidas',
-      imagen: 'assets/images/jugo_verde.jpg',
-      descripcion: 'Combinación natural de frutas y verduras.',
-      beneficios: ['Desintoxica', 'Aporta energía y vitaminas'],
-    ),
+    nombre: 'Gerardo Montes',
+    categoria: 'Jardinería',
+    imagen: 'assets/images/jardineria2.jpg',
+    descripcion: 'Jardinero profesional enfocado en el *mantenimiento preventivo y curativo*. Especializado en el cuidado intensivo de césped (siega, aireación, fertilización), poda de formación y control de plagas y enfermedades. Ideal para comunidades y propiedades que requieren perfección diaria.',
+    beneficios: ['Mantenimiento programado (semanal/quincenal)', 'Control biológico de plagas', 'Poda especializada de frutales y arbustos'],
+),
   ];
 
   @override

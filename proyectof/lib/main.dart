@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
     
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Guía de Alimentos Saludables',
+      title: 'FIXIT',
       themeMode: themeProvider.themeMode,
       theme: ThemeData(
         brightness: Brightness.light,

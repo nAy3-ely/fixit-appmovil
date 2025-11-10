@@ -9,7 +9,7 @@ class BienvenidaPage extends StatelessWidget {
       contenido: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/fondo_bienvenida.jpg'), // fondo con frutas
+            image: AssetImage('assets/images/fondo_oficios.jpg'), // <-- Cambia esta imagen
             fit: BoxFit.cover,
           ),
         ),
@@ -30,7 +30,7 @@ class BienvenidaPage extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      '¡Tu viaje hacia una alimentación saludable comienza aquí!',
+                      '¡Encuentra al profesional ideal para tu oficio!',
                       style: TextStyle(
                         fontSize: 22,
                         color: Colors.black,
@@ -39,19 +39,22 @@ class BienvenidaPage extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(height: 20),
+                    
+                    // Puedes reemplazar la imagen por un logo o ícono de herramientas
                     ClipRRect(
                       borderRadius: BorderRadius.circular(60),
                       child: Image.asset(
-                        'assets/images/usuario.jpg',
+                        'assets/images/icon_oficios.png',
                         height: 100,
                         width: 100,
                         fit: BoxFit.cover,
                       ),
                     ),
+                    
                     SizedBox(height: 20),
                     Text(
-                      'Conoce los alimentos que te nutren, te llenan de energía y hacen bien a tu cuerpo.\n\n'
-                      '¡Desliza, aprende y transforma tu forma de comer! 💪🍃',
+                      'Conecta con expertos en plomería, electricidad, carpintería, mecánica y más.\n\n'
+                      'Solicita servicios confiables y rápidos cuando más los necesitas 🔧⚡🧰',
                       style: TextStyle(
                         color: Colors.black87,
                         fontSize: 15,
@@ -65,7 +68,7 @@ class BienvenidaPage extends StatelessWidget {
                         Navigator.pushNamed(context, '/login');
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.black,
+                        backgroundColor: Color.fromARGB(255, 224, 133, 7), // Azul profesional
                         padding: EdgeInsets.symmetric(horizontal: 50, vertical: 14),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30),
