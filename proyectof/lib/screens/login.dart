@@ -68,7 +68,7 @@ class LoginPage extends StatelessWidget {
                         Navigator.pushNamed(context, '/categorias'); // ejemplo
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.black,
+                        backgroundColor:  Color.fromARGB(255, 224, 133, 7),
                         padding: EdgeInsets.symmetric(horizontal: 80, vertical: 14),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30),

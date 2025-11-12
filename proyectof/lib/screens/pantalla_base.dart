@@ -49,6 +49,11 @@ class PantallaBase extends StatelessWidget {
             onTap: () => Navigator.pushNamed(context, '/favoritos'),
           ),
           ListTile(
+            leading: Icon(Icons.dynamic_form_outlined),
+            title: Text('Formulario'),
+            onTap: () => Navigator.pushNamed(context, '/formulario'),
+          ),
+          ListTile(
             leading: Icon(Icons.settings),
             title: Text('Opciones'),
             onTap: () => Navigator.pushNamed(context, '/opciones'),

@@ -24,14 +24,14 @@ class _BuscarPageState extends State<BuscarPage> {
     Alimento(
     nombre: 'Ana María Vargas',
     categoria: 'Plomería',
-    imagen: 'assets/images/plomeria2.jpg',
+    imagen: 'assets/images/plomeria.jpg',
     descripcion: 'Maestra plomera con 8 años de experiencia. *Especialista en detección de fugas no visibles* utilizando equipos de geófono y gas trazador. Ofrezco diagnósticos precisos para resolver problemas de humedad y alta factura de agua sin necesidad de romper innecesariamente.',
     beneficios: ['Detección sin daños', 'Garantía por escrito', 'Ahorro en factura de agua'],
 ),
     Alimento(
     nombre: 'Carlos Manuel Díaz',
     categoria: 'Plomería',
-    imagen: 'assets/images/plomeria3.jpg',
+    imagen: 'assets/images/plomeria.jpg',
     descripcion: 'Técnico certificado con 15 años en el sector, enfocado en *instalaciones hidráulicas y de gas* para obras nuevas y remodelaciones. Experto en calentadores, bombas de agua, sistemas hidroneumáticos y mantenimiento preventivo integral.',
     beneficios: ['Trabajos de gran envergadura', 'Certificación en Gas Natural', 'Mantenimiento preventivo'],
 ),
@@ -72,7 +72,7 @@ class _BuscarPageState extends State<BuscarPage> {
     Alimento(
       nombre: 'Elena Mendoza',
     categoria: 'Asistencia Doméstica',
-    imagen: 'assets/images/asistencia1.jpg',
+    imagen: 'assets/images/domestica.jpg',
     descripcion: 'Profesional con 9 años dedicada a la *limpieza profunda y desinfección* de hogares. Experta en el manejo de productos ecológicos y la optimización de rutinas de limpieza. Me enfoco en cocinas, baños y el tratamiento de superficies delicadas para un ambiente saludable.',
     beneficios: ['Limpieza ecológica y sostenible', 'Eficacia en tratamiento de manchas', 'Organización básica de armarios y espacios'],
 ),
@@ -93,7 +93,7 @@ class _BuscarPageState extends State<BuscarPage> {
     Alimento(
     nombre: 'Gerardo Montes',
     categoria: 'Jardinería',
-    imagen: 'assets/images/jardineria2.jpg',
+    imagen: 'assets/images/jardineria.jpg',
     descripcion: 'Jardinero profesional enfocado en el *mantenimiento preventivo y curativo*. Especializado en el cuidado intensivo de césped (siega, aireación, fertilización), poda de formación y control de plagas y enfermedades. Ideal para comunidades y propiedades que requieren perfección diaria.',
     beneficios: ['Mantenimiento programado (semanal/quincenal)', 'Control biológico de plagas', 'Poda especializada de frutales y arbustos'],
 ),
@@ -125,7 +125,7 @@ class _BuscarPageState extends State<BuscarPage> {
             TextField(
               decoration: InputDecoration(
                 labelText: categoriaSeleccionada.isEmpty
-                    ? 'Buscar alimento...'
+                    ? 'Buscar'
                     : 'Buscar en $categoriaSeleccionada...',
                 border: OutlineInputBorder(),
                 prefixIcon: Icon(Icons.search),

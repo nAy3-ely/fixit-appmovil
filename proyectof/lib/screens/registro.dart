@@ -52,7 +52,7 @@ class RegistroPage extends StatelessWidget {
                           Navigator.pushNamed(context, '/login'); // simula registro exitoso
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.black,
+                          backgroundColor: Color.fromARGB(255, 224, 133, 7),
                           padding: EdgeInsets.symmetric(horizontal: 80, vertical: 16),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30),

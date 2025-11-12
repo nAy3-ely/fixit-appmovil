@@ -1,3 +1,4 @@
+import 'package:deber/screens/formulario.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'theme_provider.dart';
@@ -11,7 +12,6 @@ import 'screens/botones.dart';
 import 'screens/categorias.dart';
 import 'screens/buscar.dart';
 import 'screens/favoritos.dart';
-
 void main() {
   runApp(
     ChangeNotifierProvider(
@@ -49,6 +49,7 @@ class MyApp extends StatelessWidget {
         '/categorias': (context) => CategoriasPage(),
         '/buscar': (context) => BuscarPage(),
         '/favoritos': (context) => FavoritosPage(),
+        '/formulario': (context) => FormularioPage(),
       },
     );
   }
